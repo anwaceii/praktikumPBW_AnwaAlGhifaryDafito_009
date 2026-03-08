@@ -17,17 +17,14 @@ header{
     justify-content: center;
 }
 
-.menu-item{
-    margin: 10px;
-}
-
-.menu-item a{
+.menu a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    margin: 10px;
 }
 
-.menu-item a:hover{
+.menu a:hover{
     background-color: #b71c1c;
 }
 
