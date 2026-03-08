@@ -11,29 +11,23 @@ header{
     padding: 15px;
 }
 
-nav{
+.menu{
     background-color: #e53935;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.menu-item{
+    margin: 10px;
 }
 
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a{
+.menu-item a{
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    display: inline-block;
 }
 
-nav ul li a:hover{
+.menu-item a:hover{
     background-color: #b71c1c;
 }
 
@@ -56,6 +50,8 @@ nav ul li a:hover{
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
