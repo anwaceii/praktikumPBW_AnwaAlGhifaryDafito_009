@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="halamanformulir.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Selamat Datang di Website Sederhana Anwa</h1>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Form -->
+        <div class="form-area">
+            <h3>Formulir Pendaftaran</h3>
+
+            <form>
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama">
+
+                <label>NPM</label>
+                <input type="text" name="npm">
+
+                <label>Password</label>
+                <input type="password" name="password">
+
+                <label>Jenis Kelamin</label><br>
+                <input type="radio" name="jk"> Laki-laki
+                <input type="radio" name="jk"> Perempuan
+                <br><br>
+
+                <label>Hobi</label><br>
+                <input type="checkbox"> Mendengarkan Musik
+                <input type="checkbox"> Berenang
+                <input type="checkbox"> Membaca
+                <br><br>
+
+                <label>Pendidikan</label>
+                <select>
+                    <option>SMA</option>
+                    <option>D3</option>
+                    <option>S1</option>
+                </select>
+
+                <label>Pesan</label>
+                <textarea rows="4"></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Bagian ini dapat diisi dengan informasi tambahan.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
