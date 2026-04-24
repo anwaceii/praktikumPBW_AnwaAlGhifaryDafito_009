@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin Panel - Toko Buku</title>
+    <title>Admin Toko Buku</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light">
-    <nav class="navbar navbar-dark bg-dark mb-4">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <span class="navbar-brand">Panel Manajemen Buku</span>
-            <a href="index.php" class="btn btn-outline-info btn-sm">Lihat Toko</a>
+            <span class="navbar-brand"> Admin Toko</span>
+            <div>
+                <a href="admin.php" class="btn btn-light btn-sm me-2 fw-bold text-dark">Kelola Buku</a>
+                <a href="data_pelanggan.php" class="btn btn-outline-light btn-sm me-2">Data Pelanggan</a>
+                <a href="riwayat_pesanan.php" class="btn btn-outline-light btn-sm me-2">Riwayat Transaksi</a>
+                <a href="index.php" class="btn btn-info btn-sm">Ke Toko Utama</a>
+            </div>
         </div>
     </nav>
 
