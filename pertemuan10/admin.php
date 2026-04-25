@@ -21,7 +21,7 @@
     <div class="container">
         <div class="card shadow-sm p-4">
             <div class="d-flex justify-content-between mb-3">
-                <h4>Inventaris Gudang</h4>
+                <h4>Data Admin</h4>
                 <a href="tambah.php" class="btn btn-success">+ Tambah Buku Baru</a>
             </div>
 

@@ -8,7 +8,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <span class="navbar-brand">⚙️ Panel Admin Toko</span>
+            <span class="navbar-brand">Admin Toko</span>
             <div>
                 <a href="admin.php" class="btn btn-outline-light btn-sm me-2">Kelola Buku</a>
                 <a href="data_pelanggan.php" class="btn btn-outline-light btn-sm me-2">Data Pelanggan</a>
@@ -20,7 +20,7 @@
 
     <div class="container">
         <div class="card shadow-sm p-4">
-            <h4 class="mb-4">Buku Kas Transaksi</h4>
+            <h4 class="mb-4">Riwayat Transaksi</h4>
             <table class="table table-bordered table-hover">
                 <thead class="table-primary">
                     <tr>

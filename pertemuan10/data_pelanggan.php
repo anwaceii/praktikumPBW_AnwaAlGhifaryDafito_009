@@ -8,7 +8,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         <div class="container">
-            <span class="navbar-brand">⚙️ Panel Admin Toko</span>
+            <span class="navbar-brand">Admin Toko</span>
             <div>
                 <a href="admin.php" class="btn btn-outline-light btn-sm me-2">Kelola Buku</a>
                 <a href="data_pelanggan.php" class="btn btn-light btn-sm me-2 fw-bold text-dark">Data Pelanggan</a>
