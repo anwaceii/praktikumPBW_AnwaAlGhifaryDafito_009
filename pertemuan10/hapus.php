@@ -1,7 +1,7 @@
 <?php
 session_start();
 if($_SESSION['status'] != "login"){
-    header("location:login.php");
+    header("location:admin.php");
 }
 if(!isset($_GET['id'])){
     header("location:index.php");
@@ -9,5 +9,5 @@ if(!isset($_GET['id'])){
 
 include 'koneksi.php';
 mysqli_query($koneksi, "delete from buku where ID='$_GET[id]'");
-echo "<script>alert('Buku berhasil dihapus!'); window.location='index.php'</script>";
+echo "<script>alert('Buku berhasil dihapus!'); window.location='admin.php'</script>";
 ?>

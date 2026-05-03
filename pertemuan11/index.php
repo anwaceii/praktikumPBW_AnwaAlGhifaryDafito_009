@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login_Un51k4'])) {
-header("Location: admin.php?message=" .
+header("Location:login.php?message=" .
 urlencode("Mengakses fitur harus login dulu bro."));
 exit;
 }
@@ -88,6 +88,8 @@ exit;
                 </tbody>
             </table>
         </div>
+        <br>
+        <a href="logout.php" class="btn btn-danger">Logout</a>
     </div>
 
 </body>

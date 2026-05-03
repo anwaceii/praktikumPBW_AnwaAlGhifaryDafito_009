@@ -1,8 +1,13 @@
 <?php
 session_start();
-if($_SESSION['status'] != "login"){ header("location:login.php"); }
+if (!isset($_SESSION['login_Un51k4'])) { 
+    header("Location: admin.php"); 
+    exit;
+}
 include 'koneksi.php';
-$tampil = mysqli_query($koneksi, "select * from buku where ID='$_GET[id]'");
+
+$id = $_GET['id'];
+$tampil = mysqli_query($koneksi, "select * from buku where ID='$id'");
 $data = mysqli_fetch_array($tampil);
 ?>
 <!DOCTYPE html>
@@ -60,11 +65,25 @@ $data = mysqli_fetch_array($tampil);
 
     <?php
     if(isset($_POST['ubah'])){
-        mysqli_query($koneksi, "update buku set 
-            Judul = '$_POST[judul]', Penulis = '$_POST[penulis]', 
-            Tahun_Terbit = '$_POST[tahun]', Harga = '$_POST[harga]', 
-            stok = '$_POST[stok]' where ID='$_GET[id]'");
-        echo "<script>alert('Update Berhasil!'); window.location='index.php'</script>";
+        $judul = $_POST['judul'];
+        $penulis = $_POST['penulis'];
+        $tahun = $_POST['tahun'];
+        $harga = $_POST['harga'];
+        $stok = $_POST['stok'];
+        
+        $update = mysqli_query($koneksi, "UPDATE buku SET 
+            Judul = '$judul', 
+            Penulis = '$penulis', 
+            Tahun_Terbit = '$tahun', 
+            Harga = '$harga', 
+            stok = '$stok' 
+            WHERE ID='$id'");
+            
+        if($update){
+            echo "<script>alert('Update Berhasil!'); window.location='index.php'</script>";
+        } else {
+            echo "<script>alert('Update Gagal!');</script>";
+        }
     }
     ?>
 </body>
